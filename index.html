@@ -4,9 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="src/styles/reset.css">
+  <link rel="stylesheet" href="src/styles/style.css">
+  <title>Magic 8 Ball</title>
 </head>
 <body>
-  <!-- Escreva seu código aqui -->
+
+  <main>
+    <div id="regras">
+      <h2>Bem vindo ao Magic 8 Ball!</h2>
+      <p>Para jogar é bastante simples:</p>
+      <p>Você deverá digitar uma pergunta cuja resposta possa ser <strong>sim ou não</strong> e clicar <strong>na bola</strong>.</p>
+      <p>A bola irá fazer o possível para te ajudar.</p>
+      <p>A única regra é que a pergunta não pode ser repetida.</p>
+      <form>
+        <input type="text" id="input" name="pergunta" placeholder="Pergunte algo">
+      </form>
+      <div id="magic8ball">
+        <p>Clique na bola</p>
+        <img src="src/img/magic8ball.png" alt="Magic 8 ball">
+        <p id ='resposta'>Aguarde sua resposta</p>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="src/script.js"></script>
 </body>
 </html>
